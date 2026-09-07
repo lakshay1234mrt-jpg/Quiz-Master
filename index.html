@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QuizMaster - Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- START SCREEN -->
+        <div id="start-screen" class="start-screen">
+
+            <div class="quiz-header">
+                <h1>QuizMaster</h1>
+                <p>Test your knowledge and challenge yourself!</p>
+            </div>
+
+            <div class="quiz-details">
+                <div class="detail">
+                    <strong>10</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div class="detail">
+                    <strong>30s</strong>
+                    <span>Per Question</span>
+                </div>
+
+                <div class="detail">
+                    <strong>MCQ</strong>
+                    <span>Format</span>
+                </div>
+            </div>
+
+            <button id="start-btn">Start Quiz</button>
+
+        </div>
+
+
+        <!-- QUIZ SCREEN -->
+        <div id="quiz-screen">
+
+            <div class="quiz-header">
+                <h1>QuizMaster</h1>
+                <p>Test your knowledge</p>
+            </div>
+
+            <div class="quiz-info">
+                <span id="question-number">Question 1 of 10</span>
+                <span id="timer">Time: 30s</span>
+            </div>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-section">
+
+                <h2 id="question">
+                    Question will appear here
+                </h2>
+
+                <div id="answers">
+
+                    <button class="answer">
+                        Option 1
+                    </button>
+
+                    <button class="answer">
+                        Option 2
+                    </button>
+
+                    <button class="answer">
+                        Option 3
+                    </button>
+
+                    <button class="answer">
+                        Option 4
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button id="next-btn">
+                Next Question
+            </button>
+
+        </div>
+
+
+        <!-- RESULT SCREEN -->
+        <div id="result" class="result-box">
+
+            <h2>Quiz Completed!</h2>
+
+            <p>Your Final Score</p>
+
+            <h1 id="score">0/10</h1>
+
+            <button id="restart-btn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
